@@ -12,7 +12,7 @@ app.use(express.json());
 
 const client = new OpenAI({
   baseURL: "https://api.aimlapi.com/v1",
-  apiKey: process.env.AIML_API_KEY, // Cargar la clave desde .env
+  apiKey: process.env.AIML_API_KEY, 
 });
 
 app.post("/chat", async (req, res) => {

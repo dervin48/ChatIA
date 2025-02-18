@@ -29,6 +29,7 @@ const Chat = () => {
       // Hacer la petición a la API AIML (esto depende de cómo hayas configurado tu servidor AIML)
       try {
         const response = await fetch("https://chat-ia-brown.vercel.app/api/chat", {
+          // const response = await fetch("http://localhost:5000/chat", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -112,7 +113,7 @@ const Chat = () => {
             </div>
 
             {/* Formulario para enviar un mensaje */}
-            <form onSubmit={handleSendMessage} className="mt-3">
+            <form onSubmit={handleSendMessage} className="mt-2">
               <div className="input-group">
                 <input
                   type="text"
